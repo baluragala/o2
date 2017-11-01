@@ -1,0 +1,2 @@
+<h2>Total Selected Cards:{{totalSelectedCards}}</h2>
+<app-card *ngFor="let c of cardList" [card]="c" (cardClicked)="cardClicked($event)"></app-card>

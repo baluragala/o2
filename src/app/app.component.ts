@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Application';
+  timeLeft;
+
+  changeTitle(){
+    this.title = 'New Application'
+  }
+
+  setTitle(event){
+    console.log(event.target.value);
+    this.title = event.target.value;
+  }
+
+  updateTimeLeft(time){
+    this.timeLeft=time;
+  }
 }
